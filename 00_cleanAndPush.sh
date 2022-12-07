@@ -28,7 +28,7 @@ echo "--------------------------------------------------------------------------
 echo "    🚀  Update Branch to $actBranch"
 echo "--------------------------------------------------------------------------------------------------------------------------------"
 
-
+ 
 
 read -p " ❗❓ do you want to check-in the GitHub branch $actBranch with message $gitCommitMessage? [y,N] " DO_COMM
 if [[ $DO_COMM == "y" ||  $DO_COMM == "Y" ]]; then
