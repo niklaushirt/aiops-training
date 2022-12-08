@@ -9,9 +9,9 @@ export gitCommitMessage=$(date +%Y%m%d-%H%M)
 echo "--------------------------------------------------------------------------------------------------------------------------------"
 echo "    🚀  Find File Copies"
 echo "--------------------------------------------------------------------------------------------------------------------------------"
-find . -name '*copy*' -type f | grep -v DO_NOT_DELIVER
+#find . -name '*copy*' -type f | grep -v DO_NOT_DELIVER
 #find . -name '*test*' -type f | grep -v DO_NOT_DELIVER
-find . -name '*tmp*' -type f | grep -v DO_NOT_DELIVER
+#find . -name '*tmp*' -type f | grep -v DO_NOT_DELIVER
 
 
 echo "--------------------------------------------------------------------------------------------------------------------------------"

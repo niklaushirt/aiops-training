@@ -9,8 +9,8 @@ const FirstLeftText = () => <p></p>;
 const FirstRightText = () => (
   <p>
   
-  <p> Welcome to the IBM CloudPak for Watson AIOps Installation Training.</p>
-  <p>In this Training you will learn how to manually install IBM CloudPak for AIOps and how to configure some basic functionalities.</p>
+  <p> Welcome to the IBM CloudPak for Watson AIOps (CP4WAIOPS) Installation Training.</p>
+  <p>In this Training you will learn how to manually install IBM CloudPak for Watson AIOps and how to configure some basic functionalities.</p>
   <p>The idea is to provide you with an optimised way to learn how to do a basic setup of CP4WAIOPS.</p>
 
   </p>
@@ -25,9 +25,9 @@ const SecondRightText = () => (
   <p></p>
   <p>You will learn about the following topics:</p>
 
-  <li>Installing AIManager from scratch</li>
-  <li>Integrate AIManager with OpenLDAP for user management</li>
-  <li>Integrate AIManager with ELK for Log Anomalies</li>
+  <li>Installing CP4WAIOPS from scratch</li>
+  <li>Integrate CP4WAIOPS with OpenLDAP for user management</li>
+  <li>Integrate CP4WAIOPS with ELK for Log Anomalies</li>
   <li>Define and train AI Models for</li>
   <li>Log Anomaly Detectiom</li>
   <li>Metric Anomaly Detection</li>
@@ -35,11 +35,11 @@ const SecondRightText = () => (
   <li>Similar Incidents</li>
   <li>Change Risk</li>
   <li>Create Policies for Story creation and Runbook assignment</li>
-  <li>Integrate AIManager with Ansible Tower and create Runbooks in AIManager</li>
+  <li>Integrate CP4WAIOPS with Ansible Tower and create Runbooks in CP4WAIOPS</li>
   <li>Create a RobotShop Application Topology</li>
-  <li>Integrate AIManager with Instana (optional)</li>
-  <li>Integrate AIManager with Slack (optional)</li>
-  <li>Integrate AIManager with Service Now (optional)</li>
+  <li>Integrate CP4WAIOPS with Instana (optional)</li>
+  <li>Integrate CP4WAIOPS with Slack (optional)</li>
+  <li>Integrate CP4WAIOPS with Service Now (optional)</li>
   
   </p>
 );

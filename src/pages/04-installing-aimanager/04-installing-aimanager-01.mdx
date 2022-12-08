@@ -2,20 +2,22 @@
 title: "Install CP4WAIOPS"
 ---
 
-# Creating the CP4WAIOPS Instance
+### Creating the CP4WAIOPS Instance
 
 In this chapter you will install CP4WAIOPS
 
 
 
-## 🚀 TASK: Create the CP4WAIOPS Instance" link="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" >}}
+## 🚀 TASK: Create the CP4WAIOPS Instance
+<a href="https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=manager-starter-installation-cli" target="_blank" >🌏 Documentation for the Task</a>
 
 
 
 ![image](/images/54_aimanager_story.png)
 
 
-Now it's time to create the CP4WAIOPS instance.\
+Now it's time to create the CP4WAIOPS instance.
+
 To do this create an instance of the CP4WAIOPS custom resource called ibm-cp-watson-aiops with `size: small` as we'll use this only for the training and not for production (see note below).
 
 
@@ -55,36 +57,55 @@ To do this create an instance of the CP4WAIOPS custom resource called ibm-cp-wat
    EOF  
    ```
 
-   ##
 
+<InlineNotification kind="info">
 
-> This creates the `Installation` instance that the Operator will pick up and start the installation. 
+This creates the `Installation` instance that the Operator will pick up and start the installation. 
+
+</InlineNotification>
 
 
 </AccordionItem>
 </Accordion>
 
 
-#
 
 
 
+<InlineNotification kind="error">
 
+**Important - This takes up to 60 minutes**
 
-<InlineNotification kind="warning">  title="Warning" >}}
-**This takes up to 60 minutes**\
-This takes some time depending on what region of ROKS you have chosen.\
-❗ Wait for the installation to complete before continuing. \
+This takes some time depending on what region of ROKS you have chosen.
+
+Wait for the installation to complete before continuing. 
+
 The next step explains how to follow the installation progress.
+
 </InlineNotification>
 
-<InlineNotification kind="error"> title="Warning" >}}
-**This works only on IBM ROKS**\
+
+
+
+<InlineNotification kind="warning">
+
+**Warning - This works only on IBM ROKS**
+
 If you want to install on another platform you will have to adapt storageClass and storageClassLargeBlock to your available storage classes.
+
 </InlineNotification>
 
-<InlineNotification kind="info"> title="Note" >}}
-**This is only for non-production installations**\
-If you want to install CP4WAIOPS for production use please follow the documentation and make sure that you use `size: large`, as well as a recommended storage provider.\
+
+<InlineNotification kind="info">
+
+**Note - This is only for non-production installations**
+
+If you want to install CP4WAIOPS for production use please follow the documentation and make sure that you use `size: large`, as well as a recommended storage provider.
+
 See here: [Online production installation of IBM Cloud Pak for Watson AIOps CP4WAIOPS](https://www.ibm.com/docs/en/cloud-paks/cloud-pak-watson-aiops/3.5.0?topic=installation-online-console)
+
+
 </InlineNotification>
+
+
+
