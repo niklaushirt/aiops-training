@@ -4,7 +4,7 @@ module.exports = {
     description: 'IBM AIOps Training',
     keywords: 'gatsby,theme,carbon',
   },
-  pathPrefix: `/gtc`,
+  pathPrefix: `/aiops-training`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
@@ -27,6 +27,7 @@ module.exports = {
             'https://github.com/carbon-design-system/gatsby-theme-carbon',
           subDirectory: '/packages/example',
         },
+        isSwitcherEnabled: 'false',
       },
     },
   ],

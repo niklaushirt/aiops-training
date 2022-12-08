@@ -1,43 +1,50 @@
 import React from 'react';
 import { HomepageBanner, HomepageCallout } from 'gatsby-theme-carbon';
 import HomepageTemplate from 'gatsby-theme-carbon/src/templates/Homepage';
-import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from './carbon.jpg';
 
-const FirstLeftText = () => <p>Callout component</p>;
+const FirstLeftText = () => <p></p>;
 
 const FirstRightText = () => (
   <p>
-    This is a callout component. You can edit the contents by updating the{' '}
-    <a href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/5fe12de31bb19fbfa2cab7c69cd942f55aa06f79/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      pre-shadowed homepage template
-    </a>
-    . You can also provide <code>color</code> and <code>backgroundColor</code>{' '}
-    props to suit your theme.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
+  
+  <p> Welcome to the IBM CloudPak for Watson AIOps Installation Training.</p>
+  <p>In this Training you will learn how to manually install IBM CloudPak for AIOps and how to configure some basic functionalities.</p>
+  <p>The idea is to provide you with an optimised way to learn how to do a basic setup of CP4WAIOPS.</p>
+
   </p>
+
 );
 
-const SecondLeftText = () => <p>Callout component</p>;
+const SecondLeftText = () => <p>IBM AIOps Training</p>;
 
 const SecondRightText = () => (
-  <p>
-    You can also not use these components at all by not providing the callout
-    props to the template or writing your own template.
-    <a
-      className={calloutLink}
-      href="https://github.com/carbon-design-system/gatsby-theme-carbon/blob/main/packages/example/src/gatsby-theme-carbon/templates/Homepage.js">
-      Homepage source →
-    </a>
+<p>
+  
+  <p></p>
+  <p>You will learn about the following topics:</p>
+
+  <li>Installing AIManager from scratch</li>
+  <li>Integrate AIManager with OpenLDAP for user management</li>
+  <li>Integrate AIManager with ELK for Log Anomalies</li>
+  <li>Define and train AI Models for</li>
+  <li>Log Anomaly Detectiom</li>
+  <li>Metric Anomaly Detection</li>
+  <li>Event Grouping</li>
+  <li>Similar Incidents</li>
+  <li>Change Risk</li>
+  <li>Create Policies for Story creation and Runbook assignment</li>
+  <li>Integrate AIManager with Ansible Tower and create Runbooks in AIManager</li>
+  <li>Create a RobotShop Application Topology</li>
+  <li>Integrate AIManager with Instana (optional)</li>
+  <li>Integrate AIManager with Slack (optional)</li>
+  <li>Integrate AIManager with Service Now (optional)</li>
+  
   </p>
 );
 
-const BannerText = () => <h1>Carbon Gatsby theme</h1>;
+const BannerText = () => <h1>IBM AIOps Training</h1>;
 
 const customProps = {
   Banner: <HomepageBanner renderText={BannerText} image={Carbon} />,

@@ -4,16 +4,13 @@ import ResourceLinks from 'gatsby-theme-carbon/src/components/LeftNav/ResourceLi
 const links = [
   {
     title: 'Github',
-    href: 'https://github.com/carbon-design-system/gatsby-theme-carbon',
+    href: 'https://github.com/niklaushirt/aiops-training',
   },
   {
-    title: 'Carbon',
-    href: 'https://www.carbondesignsystem.com',
+    title: 'Quick Install',
+    href: 'https://github.com/niklaushirt/cp4waiops-deployer',
   },
-  {
-    title: 'Configuration guide',
-    href: '/guides/configuration',
-  },
+
 ];
 
 // shouldOpenNewTabs: true if outbound links should open in a new tab

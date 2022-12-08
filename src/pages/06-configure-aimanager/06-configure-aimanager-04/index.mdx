@@ -4,7 +4,6 @@ date: 2022-11-03T10:57:46+01:00
 weight: 54
 ---
 
-# Configure LDAP integration
 
 In this section you will connect to the existing LDAP Server and create a user with Administrative rights:
 
@@ -58,9 +57,7 @@ Group member ID map:  groupOfUniqueNames:uniqueMember
 
 1. Click `Next`
 
-
 1. Fill out the first section of fields:
-
 
     ```yaml
     Connection name:      LDAP
@@ -74,13 +71,11 @@ Group member ID map:  groupOfUniqueNames:uniqueMember
 
     ```
 
-	![image](/images/21_config.png)
-
+    ![image](/images/21_config.png)
 
 1. Click `Test connection`. You should get `Successful connection`
 
 1. Fill out the rest of the fields:
-
 
     ```yaml
     Group filter:         (&(cn=%v)(objectclass=groupOfUniqueNames))
@@ -90,9 +85,8 @@ Group member ID map:  groupOfUniqueNames:uniqueMember
     Group member ID map:  groupOfUniqueNames:uniqueMember
     ```
 
-	![image](/images/22_config.png)
-
-
+    ![image](/images/22_config.png)
+    
 1. Click `Create`
 
 1. You should get a LDAP entry in the provider list

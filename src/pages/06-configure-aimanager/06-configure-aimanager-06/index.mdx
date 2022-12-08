@@ -4,7 +4,7 @@ date: 2022-11-03T10:57:46+01:00
 weight: 56
 ---
 
-# Configure Runbooks
+
 
 In this section you will create the connection to Ansible Tower and create your first Runbook.
 
@@ -40,7 +40,6 @@ Password:              from MY_CONFIGURATION.txt
 1. Under `Ansible Automation Controller`, click on `Add connection`
 1. Click `Connect`
 
-
 1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  `2.3 Configure Runbooks - Ansible Automation Controller`
 
     ```bash
@@ -51,31 +50,23 @@ Password:              from MY_CONFIGURATION.txt
 
 	![image](/images/29_runbook.png)
 
-
 	```yaml
 	URL for REST API:      from MY_CONFIGURATION.txt
 	Authentication type:   User ID/Password
 	User:                  admin
 	Password:              from MY_CONFIGURATION.txt
-	
 
 1. Click `Done`
 
 1. Make sure that the Connection Status turn green after a few seconds
 
-
-
-
 ## Check integration
-
 
 1. In the `AIManager` "Hamburger" Menu select `Operate`/`Automations`
 1. Select tab `Actions`
 1. Verify that the Ansible Playbooks have been imported
 
 	![image](/images/30_runbook.png)
-
-
 
 </AccordionItem>
 </Accordion>
@@ -110,7 +101,6 @@ Create a Runbook based on the `CP4WAIOPS Mitigate Robotshop Ratings Outage` Ansi
 	![image](/images/31_runbook.png)
 
 1. Select tab 
-
 
 1. 🔎 Get the data from your configuration file `MY_CONFIGURATION.txt` - section  `2.4 Configure Runbooks - Runbook Parameters` 
 
