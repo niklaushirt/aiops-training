@@ -4,7 +4,7 @@ module.exports = {
     description: 'IBM AIOps Training',
     keywords: 'gatsby,theme,carbon',
   },
-  pathPrefix: `/aiops-training`,
+  pathPrefix: `/`,
   plugins: [
     {
       resolve: 'gatsby-plugin-manifest',
