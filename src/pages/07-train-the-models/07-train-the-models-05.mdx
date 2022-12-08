@@ -16,7 +16,7 @@ In this section you will set up and run training for this AI algorithm to determ
 
 
 <Accordion>
-<AccordionItem title="Need Help?">
+<AccordionItem title="💡 Need Help?">
 
 
 
