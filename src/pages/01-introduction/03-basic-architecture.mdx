@@ -5,7 +5,7 @@ title: "Basic Architecture"
 
 The environement (Kubernetes, Applications, ...) create logs that are being fed into a Log Management Tool (ELK in this case).
 
-![demo](/images/waiops_arch_overview.jpg)
+![demo](./../images/waiops_arch_overview.jpg)
 
 1. External Systems generate Alerts and send them into the CP4WAIOPS for Event Grouping.
 1. At the same time CP4WAIOPS ingests the raw logs coming from the Log Management Tool (ELK) and looks for anomalies in the stream based on the trained model.

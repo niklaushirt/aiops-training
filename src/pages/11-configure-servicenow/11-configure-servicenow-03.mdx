@@ -21,11 +21,11 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 1. Log in to your ServiceNow developer instance.
 2. In the filter field, search for users as shown below:
 
-    ![users](/images/snow/users.png)
+    ![users](./../images/snow/users.png)
 
 3. Click User Administration > Users to see the list of users as shown below:
 
-    ![users](/images/snow/user-list.png)
+    ![users](./../images/snow/user-list.png)
 
 4. You need two different users. Assign at least one user to each role.
 
@@ -47,7 +47,7 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 	* `x_ibm_waiops.watson_aiops_admin `
 	* `itil`
 
-	![events user](/images/snow/user-lincoln-roles.png)
+	![events user](./../images/snow/user-lincoln-roles.png)
 		
 		
 	`x_ibm_waiops.watson_aiops_admin`: An administrative user who can configure instances, URLs, usernames, and passwords in ServiceNow. The admin user is the only user who can see the menu options to configure IBM Cloud Pak for Watson AIOps in ServiceNow. 
@@ -57,7 +57,7 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 5. Set the password to P4ssw0rd!
 6. Click Update on the user page
 
-	![events user](/images/snow/user-lincoln.png)
+	![events user](./../images/snow/user-lincoln.png)
 	
 
 
@@ -80,7 +80,7 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 	* `service_viewer`
 	* `web_service_admin`
 
-	![events user](/images/snow/user-abel-roles.png)
+	![events user](./../images/snow/user-abel-roles.png)
 	
 	
 	`x_ibm_waiops.watson_aiops_events_user`: A non-administrative user who is required to insert IBM Cloud Pak for Watson AIOps data into ServiceNow and is configured as the connector between IBM Cloud Pak for Watson AIOps and ServiceNow. 
@@ -91,7 +91,7 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 5. Set the password to P4ssw0rd!
 6. Click Update on the user page
 
-	![events user](/images/snow/user-abel.png)
+	![events user](./../images/snow/user-abel.png)
 	
 
 
@@ -105,7 +105,7 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 1. Log in to your ServiceNow developer instance.
 2. In the filter field, search for Watson AIOps as shown in the following picture:
 
-    ![search](/images/snow/search4waiops.png)
+    ![search](./../images/snow/search4waiops.png)
 
 3. Click Configuration.
 4. Enter values for the following fields as shown in the next picture.
@@ -120,7 +120,7 @@ Before you create your integration, you must assign IBM Cloud Pak for Watson AIO
 
     * Password for AIOps connection: `Your password for admin`. (The password for the IBM Cloud Pak for Watson AIOps instance.)
 
-    ![configuration](/images/snow/configuration.png)
+    ![configuration](./../images/snow/configuration.png)
 
 5. Click on the Save button in the top right. 
 
@@ -135,7 +135,7 @@ While not necessary, configuring similar incident search in ServiceNow facilitat
 1. Log in to your ServiceNow developer instance.
 2. In the filter field, search for `Search contexts` as shown below:
 
-    ![configuration](/images/snow/search-context.png)
+    ![configuration](./../images/snow/search-context.png)
 
 3. Click `Incident Deflection` to open the Incident Deflection record.
 4. Click the `Additional Resource Configurations` tab, then click `Edit` as shown below. 
@@ -144,11 +144,11 @@ While not necessary, configuring similar incident search in ServiceNow facilitat
     
     **Note:** If you don't see the `Edit` button, go to `Settings` (cog in the top right corner), select `Developer` and under `Applications` select `Global` from the drop-down.
 
-    ![configuration](/images/snow/additional-resources.png)
+    ![configuration](./../images/snow/additional-resources.png)
 
 5. Select `Watson AIOps Similar Incidents` from the Collection column and add it to the Additional Resource Configurations List, then click Save.
 
-    ![config-list](/images/snow/config-list.png)
+    ![config-list](./../images/snow/config-list.png)
 
 6. (Optional) You can adjust the order of how the search elements appear by adjusting the Order attribute.
 7. Save your Incident Deflection record.

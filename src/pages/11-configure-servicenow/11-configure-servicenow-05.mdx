@@ -11,19 +11,19 @@ weight: 196
 
 After the integration is finished, for every chatbot story created, an incident will be created in ServiceNow. For example, the creation of the following story number 9 in Slack:
 
-  ![slack-story](/images/snow/slack-story.png)
+  ![slack-story](./../images/snow/slack-story.png)
 
 This story has a corresponding incident created in ServiceNow. To access these incidents, from the ServiceNow home page search for agent, and click on Agent Workspace Home, as shown below
 
-  ![agent-workspace](/images/snow/agent-workspace.png)
+  ![agent-workspace](./../images/snow/agent-workspace.png)
 
 In the Agent Workspace, if you click on the burger menu and select Watson AIOps Incidents, you will see the list of incidents created by Watson AIOps as shown below
 
-  ![waiops-incidents-in-sn](/images/snow/waiops-incidents-in-sn.png)
+  ![waiops-incidents-in-sn](./../images/snow/waiops-incidents-in-sn.png)
 
 This is the incident in ServiceNow that corresponds to the story number 9 that was mentioned before
 
-  ![story9-in-sn](/images/snow/story9-in-sn.png)
+  ![story9-in-sn](./../images/snow/story9-in-sn.png)
 
 
 ## 📥 Step: Historical similar incidents
@@ -36,11 +36,11 @@ The process can be defined in the following steps:
 
 1) Change at least five existing incidents in your ServiceNow developer instance in order to match the stories you already have in Slack. To see the existing sample incidents in your ServiceNow developer instance search for incidents and select Service Desk -> Incidents as shown below
 
-  ![search-incidents](/images/snow/search-incidents.png)
+  ![search-incidents](./../images/snow/search-incidents.png)
 
 Select an existing open incident and update the description and short description with some known log anomaly error from an existing story. For example the next picture shows the description as "Unknown Error web". Then click on the Resolution Information tab and Close the incident with resolution code Solved and fill the Resolution Notes with some resolution such as "web service was restarted". Repeat this process for at least five tickets.
 
-  ![updated-incident](/images/snow/updated-incident.png)
+  ![updated-incident](./../images/snow/updated-incident.png)
 
 2) Now we can load the historical incidents data. We will verify that there is no incident data loaded yet by running the following command
 
@@ -65,7 +65,7 @@ We will enable the incident data flow now.
 1. Select a start/end date to cover the existing sample incidents in the ServiceNow developer instance. In my instance this range was from 08/08/2015 until 05/13/2021. 1. Select 2 for "Source parallelism". Keep topology Data off. 
 1. Click on the Save button at the bottom of the page. 
 
-   ![flow-on](/images/snow/flow-on.png)
+   ![flow-on](./../images/snow/flow-on.png)
 
 Now incident data is being loaded into WAIOPS. **Wait for an hour.** 
 
@@ -88,15 +88,15 @@ As you can see there is incident data now loaded in elastic search. Now we need 
 
 3) Now its time to use that data for historical similar incident training. Click AI Model Management from the Home page and select the Similar Incidents card as shown below.
 
-  ![similar-incidents-button](/images/snow/similar-incidents-button.png)
+  ![similar-incidents-button](./../images/snow/similar-incidents-button.png)
 
   Create a training definition by clicking on the Create Training Definition button. Select "manually" for the schedule option and click save. The next picture shows a training definition (not that in this case it has already been used for training)
 
-  ![training-definition](/images/snow/training-definition.png)
+  ![training-definition](./../images/snow/training-definition.png)
 
 Now its time to run the training. From the top right Actions menu select Start Training. After some time, you will the training results and the confirmation that the model has been deployed as shown in the next picture:
 
-  ![training-done](/images/snow/training-done.png)
+  ![training-done](./../images/snow/training-done.png)
 
 Now, lets take a look at elastic search again and see if the new model is there. Run the following commands: 
 
@@ -120,7 +120,7 @@ As you can see, there is a new model created for incidents.
 
 4. Finally, lets use the new model by running the Search Similar Incidents functionality from an existing story in Slack. Select a story that has a reference to the updated incident you did previously and click on Search Similar Incident button 
 
-  ![similar-incidents-slack](/images/snow/similar-incidents-slack.png)
+  ![similar-incidents-slack](./../images/snow/similar-incidents-slack.png)
 
 As we can see in the previous picture, when we click search, a historical incident is found and a summary of the ticket resolution activities are shown. You can click on the text in blue to go to the actual ticket in your ServiceNow developer instance.  
 
@@ -141,11 +141,11 @@ A CI does not exist on its own. CIs have dependencies and relationship with othe
 
 In order to see existing CMDB data in ServiceNow, from the developer instance home page, from the top left you can search for CI, click on CI Class Manager and click the 'Hierarchy' button at the upper left of this page to start the CI Class Manager. 
 
-  ![ci-class-manager](/images/snow/ci-class-manager.png)
+  ![ci-class-manager](./../images/snow/ci-class-manager.png)
 
 For example, on the *CI Classes* column, click on *Hardware*, select the CI List to see the actual items and search for SAP. You will find a number of SAP servers own by the Lenovo Organization as shown below. We will see these same SAP servers later in the Topology Viewer in WAIOPS.
 
-  ![sap-lenovo](/images/snow/sap-lenovo.png)
+  ![sap-lenovo](./../images/snow/sap-lenovo.png)
 
 #### ServiceNow Observer Job
 
@@ -153,7 +153,7 @@ In CP4WAIOPS there are two ways to enable a ServiceNow observer job: the first w
 
 From the WAIOPS home page, click on *Data and tool integrations*, then click on the *Advanced* tab and finally select *Manage observer jobs*. You will see the list of available observers after you click on the *Add a new job* card as shown below (note that the number of observer cards will vary depending on what observers are enabled in your WAIOPS instance)
 
-  ![observer-list](/images/snow/observer-list.png)
+  ![observer-list](./../images/snow/observer-list.png)
 
 Click on the ServiceNow card and complete the observer job form as shown below: 
 
@@ -166,7 +166,7 @@ Leave the optional **Additional parameters** section unchanged. Click on the **J
 
 The following screenshot shows the complete form: 
 
-  ![edit-observer-job](/images/snow/edit-observer-job.png)
+  ![edit-observer-job](./../images/snow/edit-observer-job.png)
 
 Finally click on **Save** to save the observer job configuration and run the job. This job will pull all the existing topology and inventory data from your ServiceNow developer instance into WAIOPS.
 
@@ -197,7 +197,7 @@ INFO   [2021-05-21 19:09:23,087] [pool-12-thread-1] c.i.i.t.o.p.ResourceUploadPl
 
 Finally, lets verify the ServiceNow inventory and topology data in the Topology Viewer. From the WAIOPS home page click on *Topology viewer* and search for Lenovo and click on the search result blue target. You will see that the topology for the ServiceNow Organization *Lenovo* is shown. If you zoom-in, you will see that this topology includes the SAP servers (SAP-SD-01, SAP-SD-02, etc) we saw before in ServiceNow.
 
-  ![lenovo-topology](/images/snow/lenovo-topology.png)
+  ![lenovo-topology](./../images/snow/lenovo-topology.png)
 
 
 ## 📥 Step: Encrypting the Service Now Password
